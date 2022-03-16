@@ -1,2 +1,10 @@
 # ContosoPizzaEFCoreAndRazor
-For showing demo of Razor page with EF
+
+Tools used:
+
+1) .Net 6.
+2) SQL Server.
+
+
+
+

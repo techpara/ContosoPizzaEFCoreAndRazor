@@ -1,0 +1,32 @@
+﻿@page "/pizza/home"
+@model HomeModel
+@{
+    ViewData["Title"] = "Pizza page";
+}
+
+<div class="container">
+    <div class="row">
+
+        <table class="table table-bordered" id="employeeTable">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.allPizza)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Price</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
