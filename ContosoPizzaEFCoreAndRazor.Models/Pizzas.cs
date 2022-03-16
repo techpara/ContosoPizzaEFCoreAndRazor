@@ -8,7 +8,7 @@ namespace ContosoPizzaEFCoreAndRazor.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public int Price { get; set; }
-        public int PriceCategoryId { get; set; }
+        public int PizzaCategoryID { get; set; }
         public PizzaCategories PizzaCategory { get; set; }
     }
 }

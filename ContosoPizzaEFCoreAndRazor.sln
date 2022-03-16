@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoPizzaEFCoreAndRazor.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoPizzaEFCoreAndRazor.Data", "ContosoPizzaEFCoreAndRazor.Data\ContosoPizzaEFCoreAndRazor.Data.csproj", "{6C17F94F-4CFE-4280-8315-CAAF96F3B186}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoPizzaEFCoreAndRazor.UI", "ContosoPizzaEFCoreAndRazor.UI\ContosoPizzaEFCoreAndRazor.UI.csproj", "{9F5DE39C-36C1-488F-AA35-9D19C1B4D498}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoPizzaEFCoreAndRazor.UI", "ContosoPizzaEFCoreAndRazor.UI\ContosoPizzaEFCoreAndRazor.UI.csproj", "{9F5DE39C-36C1-488F-AA35-9D19C1B4D498}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

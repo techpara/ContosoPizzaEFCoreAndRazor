@@ -1,0 +1,28 @@
+﻿@page "/pizza/edit"
+@model ContosoPizzaEFCoreAndRazor.UI.Pages.pizza.editModel
+@{
+    ViewData["Title"] = "Pizza Update";
+}
+<div class="container">
+    <div class="row ">
+        <div class="col-md-6 offset-md-3">
+            <form method="POST">
+                <legend>Update Pizza</legend>
+                <div class="mb-3">
+                    <label for="txtName" class="form-label">Name</label>
+                    <input asp-for="pizzaModel.Name" type="text" class="form-control" id="txtName" />
+                </div>
+                <div class="mb-3">
+                    <label for="txtCost" class="form-label">Price</label>
+                    <input asp-for="pizzaModel.Price" type="text" class="form-control" id="txtCost" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="ddPizzaCategoryId" class="form-label">Category</label>
+                    <select id="ddPizzaCategoryId"  asp-for="pizzaModel.PizzaCategoryID" asp-items="Model.Categories" class="form-control"></select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

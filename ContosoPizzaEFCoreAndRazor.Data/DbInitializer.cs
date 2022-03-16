@@ -25,9 +25,9 @@ namespace ContosoPizzaEFCoreAndRazor.Data
 
             var pizzaa = new Pizzas[]
             {
-                new Pizzas{Name = "Margarita", Price = 51, PriceCategoryId = 1},
-                new Pizzas{Name = "Delecious Cheese", Price = 41, PriceCategoryId = 1},
-                new Pizzas{Name = "Capcicum Onion Cheese", Price = 31, PriceCategoryId = 1},
+                new Pizzas{Name = "Margarita", Price = 51, PizzaCategoryID = 1},
+                new Pizzas{Name = "Delecious Cheese", Price = 41, PizzaCategoryID = 1},
+                new Pizzas{Name = "Capcicum Onion Cheese", Price = 31, PizzaCategoryID = 1},
 
             };
 
