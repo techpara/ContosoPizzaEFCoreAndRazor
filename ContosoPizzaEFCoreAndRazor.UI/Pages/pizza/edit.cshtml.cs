@@ -17,7 +17,7 @@ namespace ContosoPizzaEFCoreAndRazor.UI.Pages.pizza
             _dbContext = dbContext;
         }
         [BindProperty]
-        public PizzDTO pizzaModel { get; set; }
+        public PizzaDTO pizzaModel { get; set; }
 
         public List<SelectListItem> Categories { get; set; }
 
@@ -33,7 +33,7 @@ namespace ContosoPizzaEFCoreAndRazor.UI.Pages.pizza
             pizzaModel = await _dbContext.Pizzas
                 .Where(_ => _.ID == id)
                 .Select(_ =>
-                new PizzDTO
+                new PizzaDTO
                 {
                     ID = _.ID,
                     Name = _.Name,

@@ -17,7 +17,7 @@ namespace ContosoPizzaEFCoreAndRazor.UI.Pages.pizza
             _dbContext = dbContext;
         }
         [BindProperty]
-        public PizzDTO pizzaModel { get; set; }
+        public PizzaDTO pizzaModel { get; set; }
 
         public List<SelectListItem> Categories { get; set; }
 

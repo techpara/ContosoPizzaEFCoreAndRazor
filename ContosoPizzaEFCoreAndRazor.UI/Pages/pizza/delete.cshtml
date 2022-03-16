@@ -1,0 +1,27 @@
+﻿@page "/delete"
+@model ContosoPizzaEFCoreAndRazor.UI.Pages.pizza.deleteModel
+@{
+     ViewData["Title"] = "Pizza Delete";
+}
+ 
+<div class="container">
+    <div class="row">
+        <p class="text-danger">@Model.ErrorMessage</p>
+    </div>
+    <div class="row">
+        <div class="col-md-3 m-3">
+            <legend>Confirm To Delete</legend>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.pizzaModel.Name</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">@Model.pizzaModel.Price $</h6>
+                    <div>
+                        <form method="post">
+                            <button type="submit" class="btn btn-danger">Confirm Delete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

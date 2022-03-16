@@ -1,6 +1,6 @@
 ﻿namespace ContosoPizzaEFCoreAndRazor.Models.DTO
 {
-    public class PizzDTO
+    public class PizzaDTO
     {
         public int ID { get; set; }
         public string Name { get; set; }
