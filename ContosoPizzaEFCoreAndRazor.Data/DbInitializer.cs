@@ -11,7 +11,7 @@ namespace ContosoPizzaEFCoreAndRazor.Data
 
             if (context.PizzaCategories.Any())
             {
-                return;  
+                return;
             }
 
             var categories = new PizzaCategories[]
@@ -32,6 +32,27 @@ namespace ContosoPizzaEFCoreAndRazor.Data
             };
 
             context.Pizzas.AddRange(pizzaa);
+            context.SaveChanges();
+
+
+            var customers = new Customers[]
+            {
+                new Customers{Name = "Customer 1"},
+                new Customers{Name = "Customer 2"},
+                 new Customers{Name = "Customer 3"},
+            };
+
+            context.Customers.AddRange(customers);
+            context.SaveChanges();
+
+
+            var addresses = new PizzasDeliveryAddress[]
+           {
+                new PizzasDeliveryAddress{ Street="A1", City = "NY", State = "NY", ZipCode="123456", CustomerId = 1},
+                new PizzasDeliveryAddress{ Street="A1", City = "Mumbai", State = "MH", ZipCode="89897", CustomerId = 1},
+           };
+
+            context.PizzasDeliveryAddress.AddRange(addresses);
             context.SaveChanges();
         }
     }

@@ -1,0 +1,40 @@
+﻿@page "/pizza/address"
+@model deliveryaddresshistoryModel
+@{
+    ViewData["Title"] = "Address";
+}
+
+<div class="container">
+
+    <div class="row">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Street
+                    </th>
+                    <th>
+                        City
+                    </th>
+                    <th>
+                        State
+                    </th>
+                    <th>
+                        Zip
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.pizzasDeliveryAddress)
+                {
+                    <tr>
+                        <td>@item.Street</td>
+                        <td>@item.City</td>
+                        <td>@item.State</td>
+                        <td>@item.ZipCode</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations_Backup\**" />
+    <EmbeddedResource Remove="Migrations_Backup\**" />
+    <None Remove="Migrations_Backup\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.3">
@@ -17,6 +23,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ContosoPizzaEFCoreAndRazor.Models\ContosoPizzaEFCoreAndRazor.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

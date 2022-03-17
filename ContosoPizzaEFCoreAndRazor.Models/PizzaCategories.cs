@@ -2,7 +2,7 @@
 
 namespace ContosoPizzaEFCoreAndRazor.Models
 {
-    public class PizzaCategories
+    public class PizzaCategories : BaseEntity
     {
         public int ID { get; set; }
         public string Name { get; set; }

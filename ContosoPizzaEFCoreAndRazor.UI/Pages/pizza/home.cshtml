@@ -22,6 +22,9 @@
                         Price
                     </th>
                     <th>
+                        Category
+                    </th>
+                    <th>
                         Edit
                     </th>
                     <th>
@@ -35,6 +38,7 @@
                     <tr>
                         <td>@item.Name</td>
                         <td>@item.Price</td>
+                          <td>@item.PizzaCategory.Name</td>
                         <td><a asp-page="./edit" asp-route-id="@item.ID" class="btn btn-primary">Edit</a></td>
                         <td><a asp-page="./delete" asp-route-id="@item.ID" class="btn btn-danger">Delete</a></td>
                     </tr>

@@ -19,7 +19,7 @@ namespace ContosoPizzaEFCoreAndRazor.UI.Pages
 
         public async Task<IActionResult> OnGetAsync()
         {
-            allPizza = await _dbContext.Pizzas.ToListAsync();
+            allPizza = await _dbContext.Pizzas.Include(x=>x.PizzaCategory).ToListAsync();
             return Page();
         }
     }
